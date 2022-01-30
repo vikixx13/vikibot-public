@@ -9,11 +9,6 @@ client.events = new Collection();
 module.exports = client;
 
 
-client.once('ready', () => {
-	console.log('vikibot online');
-});
-
-
 require('./handler/handler.js')(client);
 
 client.login(config.Token);
