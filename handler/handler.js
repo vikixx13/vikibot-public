@@ -39,8 +39,6 @@ client.on("ready", async () => {
     //     .commands.set(commands);
 
     // Register for all the guilds the bot is in-
-    await client.application.commands.set(commands);
+    await client.commands.set(commands);
 });
-
-
 }

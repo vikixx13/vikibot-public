@@ -41,7 +41,7 @@ client.on( "interactionCreate" ,	async (interaction) =>{
                 .setTitle("Error Logs")
                 .addField("Error" , `${error}` , false);
     
-                interaction.client.channels.cache.get('930430067446775808').send({embeds:[errorEmbed]});
+                interaction.client.channels.cache.get('937394269931569303').send({embeds:[errorEmbed]});
     
                 console.error(error);
             } 
@@ -57,7 +57,7 @@ client.on( "interactionCreate" ,	async (interaction) =>{
         .addField("Channel Name" , `#${interaction.channel.name}`,false)
         .addField("Guild Name" , interaction.guild.name,false)
         .addField('Guild ID' , interaction.guild.id , false);
-        interaction.client.channels.cache.get('930429980939264012').send({embeds:[actionembed]});
+        interaction.client.channels.cache.get('937394269931569303').send({embeds:[actionembed]});
     
     
 

@@ -11,7 +11,11 @@ module.exports = client;
 
 client.once('ready', () => {
 	console.log('vikibot online');
+
+	client.user.setActivity('with ur mum');
+
 });
+
 
 
 require('./handler/handler.js')(client);
