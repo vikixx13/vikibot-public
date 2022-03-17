@@ -12,4 +12,5 @@
 |Name | Date | Contribution |
 |----|-----|------|
 |Dhruv Kumar|15-03-2022| Updated the Readme.md file|
+|Dhruv Kumar|17-03-2022| Added Some Files and Functions|
 
