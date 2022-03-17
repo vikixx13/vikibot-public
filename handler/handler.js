@@ -21,8 +21,6 @@ cmdFolders.forEach(cmdFolder => {
     const cmdFiles = fs.readdirSync(`./commands/`).filter(file => file.endsWith('.js'));
     cmdFiles.forEach(file =>{
 	const command = require(`../commands/${file}`);
-	// Set a new item in the Collection-
-	// With the key as the command name and the value as the exported module
 	client.commands.set(command.name, command);
     commands.push(command);
 
@@ -31,14 +29,6 @@ cmdFolders.forEach(cmdFolder => {
 
 
 client.on("ready", async () => {
-
- 
-    // Register for a single guild
-    // await client.guilds.cache
-    //     .get("926738025759776858")
-    //     .commands.set(commands);
-
-    // Register for all the guilds the bot is in-
     await client.commands.set(commands);
 });
 }
