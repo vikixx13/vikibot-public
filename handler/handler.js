@@ -1,6 +1,7 @@
 const fs = require('fs');
 const config = require('../config');
 const mongoose = require ('mongoose');
+const {register} = require('../register.js');
 
 module.exports = (client)=> {
 //Event Handling
@@ -28,7 +29,5 @@ cmdFolders.forEach(cmdFolder => {
 });
 
 
-client.on("ready", async () => {
-    await client.commands.set(commands);
-});
+client.on("ready", async () => register(commands) );
 }
