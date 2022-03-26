@@ -14,7 +14,7 @@
     "reconlx": "^2.5.2"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node main.js"
   },
   "author": "viki",
   "license": "ISC"
