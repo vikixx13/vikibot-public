@@ -11,7 +11,7 @@
     "discord-api-types": "^0.26.1",
     "discord.js": "^13.6.0",
     "mongoose": "^6.1.8",
-    "reconlx": "^2.5.2",
+    "reconlx": "^2.5.2"
   },
   "scripts": {
     "start": "node index.js"
