@@ -6,6 +6,6 @@ module.exports = new Command({
     type:"CHAT_INPUT",
     userPermissions:['ADMINISTRATOR'],
     execute : async({interaction , client})=>{
-        interaction.reply({content:`${client.ws.ping}ms`})
+        interaction.reply({content:`${client.ws.ping}ms `})
     }
 });
