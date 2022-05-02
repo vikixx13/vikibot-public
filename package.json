@@ -14,6 +14,7 @@
     "reconlx": "^2.5.2"
   },
   "scripts": { 
+    "test": "echo \"Error: no test specified\" && exit 1", 
     "start": "node main.js"
   },
 
